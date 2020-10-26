@@ -1,6 +1,6 @@
 // How to push code to github: https://www.youtube.com/watch?v=wrb7Gge9yoE
 
-// Form validation.
+// Form validation. sdfsdfsdfsdfsdfsdf
 // document.getElementById's saved into a variable for easier use. 
 var elementBaseRate = document.getElementById("base-rate");
 var elementBaseRateValidate = document.getElementById("base-rate-validate");
