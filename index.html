@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300;1,400&display=swap" rel="stylesheet"> 
+		
+        <title>VIPKID Payment Calculator</title>
+    </head>
+
+    <body>
+	<header>
+			<nav>
+				<div class="row">
+					<img src="resources/img/moneyTwo.jpg" alt="moneyTwo" class="moneyTwo">
+				</div>
+				<div class="row">
+					<div class ="title-text-box">
+						<h1>VIPKID Payment Calculator</h1>
+						<h1>By: Teacher Aaron</h1>
+					</div>
+				</div>
+	</header>
+
+	<section class="section-instructions">
+		<h3>
+			Welcome to the VIPKID Payment Calculator!  
+		</h3>
+		<p>
+			This calculator calculates and compares your pay with the new pay structure and compares it to the old pay structure.
+		</p><br>
+		<ol>
+			<li>
+				 1. Enter your base rate per class. $7 to $11 dollars. 
+			</li>
+			<li>
+				 2. Enter your total lifetime classes with VIPKID.
+			</li>
+			<li>
+				 3. Enter all classes you have taught this month. Please include Trial SNS's, regular class SNS's and short notice classes.
+			</li>
+			<li>
+				4. Enter the total short notice classes you taught this month. If you don't want to look and check how many, just enter 0 and it won't include short notice extra pay.
+			</li>
+			<li>
+				5. Enter your total TRIAL SNS's. This will adjust your total base pay to half base pay for these classes. If you don't want to check, just enter 0 and it will not add this calculation. 
+			</li>
+		</ol>
+	</section>
+		
+	<section class="section-input-form">	
+		<form id="our-form">
+			<div class="row-input">1. Base Rate ($7 to $11): <input type="text" id="base-rate"></div>
+			<span id="base-rate-validate"></span><br>
+			<div class="row-input">2. Total Lifetime Classes: <input type="text" id="total-classes"></div>
+			<span id="total-classes-validate"></span><br>
+			<div class="row-input">3. Total classes this month: <input type="text" id="this-month-classes"></div>
+			<span id="this-month-classes-validate"></span><br>
+			<div class="row-input">4. Total short notice classes: <input type="text" id="short-notice-classes"></div>
+			<span id="short-notice-classes-validate"></span><br>
+			<div class="row-input">5. Total TRIAL SNS classes: <input type="text" id="trial-no-show-classes"></div>
+			<span id="trial-no-show-classes-validate"></span><br>
+			<div class="row-input"><input type="submit" class = "btn" value="Submit"></div>
+		</form>
+	</section>
+		
+	<section class="section-pay-output">
+		<div class="row">
+			<div class="col span-1-of-2">
+				<h2>Old Pay:</h2>
+				Your old incentive pay: $<span id="old-incentive-pay"> </span><br>
+				Your old total pay: $<span id="total-old-pay"></span><br>
+			</div>
+			<div class="col span-1-of-2">
+				<h2>New Pay:</h2>
+				Your new incentive pay: $<span id="new-incentive-pay"></span><br>
+				Your new total pay: $<span id="total-new-pay"></span><br>
+				Pay difference: <span id="pay-difference"></span>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col span-1-of-2">
+				<h2>Basic Info:</h2>
+				Your base rate is: $<span id="base-rate-output"></span><br>
+				Your class tier: <span id="class-tier"></span><br>
+				Your total classes: <span id="total-classes-output"></span><br>
+				Your total classes this month: <span id="this-month-classes-output"></span><br>
+				Your total short notice classes this month: <span id="short-notice-classes-output"></span><br>
+				Your total trial SNS classes this month: <span id="trial-no-show-classes-output"></span><br>
+			</div>
+		
+			<div class="col span-1-of-2">	
+				<h2>Base Pay Info:</h2>
+				Your total base pay: $<span id="total-base-pay"></span></br>
+				Your total base pay, adjusted for short notice and trial SNS classes is: $<span id="total-adjuted-base-pay"></span><br>
+				Your total short notice pay (added to your total pay): $<span id="total-short-notice-classes-pay"></span><br>
+				Your total trial SNS's (classes paid at half your base rate): $<span id="total-trial-SNS-classes-pay"></span><br><br>
+			</div>
+		</div>
+	</section>
+
+	<script src="script.js"></script>
+    </body>
+</html>
+
